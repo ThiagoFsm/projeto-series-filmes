@@ -3,7 +3,7 @@ networks:
     external: true
 
 services:
-  app:
+  php:
     container_name: php.${APP_NAME}
     build:
       context: .
@@ -61,7 +61,7 @@ services:
     networks:
       - proxy
     ports:
-      - 3306:3306
+      - "3306:3306"
     ulimits:
       nproc: 65535
       nofile:

@@ -49,6 +49,14 @@ O script de inicialização irá automaticamente:
 - Rodar as migrações e seeds do banco de dados.
 - Iniciar o serviço `php-fpm`.
 
+### 3. Adicionar aliases no arquivo nano ~/.bashrc
+
+- alias php='docker compose run --rm -u "1001:1001" "nome serviço php" php'
+- alias artisan='docker compose run --rm -u "1001:1001" "nome serviço php" php artisan'
+- alias composer='docker compose run --rm -u "1001:1001" "nome serviço php" composer'
+- alias node='docker compose run --rm -u "1001:1001" node'
+- alias npm='docker compose run --rm -u "1001:1001" node npm'
+
 **b. Acesse a Aplicação:**
 
 Sua aplicação Laravel estará disponível no seu navegador em [http://localhost](http://localhost).
